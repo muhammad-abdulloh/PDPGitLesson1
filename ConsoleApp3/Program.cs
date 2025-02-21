@@ -12,51 +12,8 @@ public class Program
 
         try
         {
-            int[] numbers = new int[5];
-
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                Random random = new Random();
-
-                numbers[i] = random.Next(1, 5);
-            }
-
-
-            bool youWin = true;
-
-            while (youWin)
-            {
-                Console.Write("O'ylagan sonni kiriting: ");
-                int number = int.Parse(Console.ReadLine());
-
-                foreach (int x in numbers)
-                {
-                    if (number == x)
-                    {
-                        Console.WriteLine("Siz yutdingiz! ");
-                        youWin = false;
-                        break;
-                    }
-                }
-                //
-            }
-
-            while (youWin)
-            {
-                Console.Write("O'ylagan sonni kiriting: ");
-                int number = int.Parse(Console.ReadLine());
-
-                foreach (int x in numbers)
-                {
-                    if (number == x)
-                    {
-                        Console.WriteLine("Siz yutdingiz! ");
-                        youWin = false;
-                        break;
-                    }
-                }
-                //
-            }
+            Console.WriteLine("NIma gap");
+ //cw   
 
         }
         catch (Exception ex) 
