@@ -41,6 +41,23 @@ public class Program
                 //
             }
 
+            while (youWin)
+            {
+                Console.Write("O'ylagan sonni kiriting: ");
+                int number = int.Parse(Console.ReadLine());
+
+                foreach (int x in numbers)
+                {
+                    if (number == x)
+                    {
+                        Console.WriteLine("Siz yutdingiz! ");
+                        youWin = false;
+                        break;
+                    }
+                }
+                //
+            }
+
         }
         catch (Exception ex) 
         {
