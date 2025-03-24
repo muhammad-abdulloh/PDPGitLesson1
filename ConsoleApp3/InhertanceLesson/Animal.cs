@@ -4,19 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp3
+namespace ConsoleApp3.InhertanceLesson
 {
-
-    internal class Class1 
+    internal abstract class Animal : ICarDoorService
     {
-        public int Qshish(int number1, string number2)
+        public void EshikOchish()
         {
             throw new NotImplementedException();
         }
 
-        public string Stop()
+        public void EshikYopish()
         {
             throw new NotImplementedException();
         }
+
+        public abstract void OvozCHiqarish(string voice);
+        
     }
 }

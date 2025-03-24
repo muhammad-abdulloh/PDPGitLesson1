@@ -1,35 +1,52 @@
 ﻿using ConsoleApp3;
-using ConsoleApp3.Homeworks;
-using ConsoleApp3.Services;
-using System.Diagnostics;
-using System.Net.WebSockets;
-using System.Text;
+using ConsoleApp3.Collectionss;
+using ConsoleApp3.InhertanceLesson;
+using System.Collections;
+using System.Data;
 
-public class Program
+class Program
 {
-    public static void Main(string[] args)
+    
+    static void Main(string[] args)
     {
+        // sortedlist bilan ishlash
+        // tartiblab
+        SortedList<string, string> numbers = new SortedList<string, string>();
+        
+        // tartib 
 
-        try
-        {
-            Console.WriteLine("NIma gap");
- //cw   
+        numbers.Add("D", "Four");
+        numbers.Add("A", "Three");
+        numbers.Add("C", "One");
+        numbers.Add("B", "Two");
 
-        }
-        catch (Exception ex) 
-        {
-            Console.WriteLine("Qandaydur xatolik chiqdi: ");
-        }
+        Console.WriteLine(numbers["C"]);
+
+        //foreach (var item in numbers)
+        //{
+        //    System.Console.WriteLine(item.Key + " " + item.Value);
+        //}
+        Console.WriteLine("So'zni kiriting: ");
+        var data = Console.ReadLine();
+        CHeckLAtter(data);
 
     }
 
-    // clientilarni ismlari
-    public static void Main2(string[] ismlar)
+    static void CHeckLAtter(string value)
     {
-        for(int i = 0; i < ismlar.Length; i++)
+        Dictionary<string, string> sozlar = new Dictionary<string, string>()
         {
-            Random rand = new Random(); 
-            Console.WriteLine(ismlar[i] + $" {rand.Next(50, 200)}");
+            { "olma", "Apple" },
+            { "uzum", "Grapes" },
+            { "banan", "Banana" },
+        };
+
+        foreach(var item in sozlar)
+        {
+            if(item.Key == value)
+            {
+                Console.WriteLine(item.Value);
+            }
         }
     }
 }
