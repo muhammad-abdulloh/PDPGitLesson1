@@ -1,52 +1,27 @@
 ﻿using ConsoleApp3;
 using ConsoleApp3.Collectionss;
 using ConsoleApp3.InhertanceLesson;
+using Microsoft.Win32.SafeHandles;
 using System.Collections;
 using System.Data;
 
 class Program
 {
+    public static int Id { get; set; } = default;
+    public static string? Name { get; set; } = "";
+    public static string Name2 { get; set; } = "sdfsdf";
     
     static void Main(string[] args)
     {
-        // sortedlist bilan ishlash
-        // tartiblab
-        SortedList<string, string> numbers = new SortedList<string, string>();
-        
-        // tartib 
+        string ? name = null;
 
-        numbers.Add("D", "Four");
-        numbers.Add("A", "Three");
-        numbers.Add("C", "One");
-        numbers.Add("B", "Two");
+        if(string.IsNullOrEmpty(name))
 
-        Console.WriteLine(numbers["C"]);
+        Console.WriteLine(Id);
+        Console.WriteLine(Name);
 
-        //foreach (var item in numbers)
-        //{
-        //    System.Console.WriteLine(item.Key + " " + item.Value);
-        //}
-        Console.WriteLine("So'zni kiriting: ");
-        var data = Console.ReadLine();
-        CHeckLAtter(data);
 
     }
 
-    static void CHeckLAtter(string value)
-    {
-        Dictionary<string, string> sozlar = new Dictionary<string, string>()
-        {
-            { "olma", "Apple" },
-            { "uzum", "Grapes" },
-            { "banan", "Banana" },
-        };
-
-        foreach(var item in sozlar)
-        {
-            if(item.Key == value)
-            {
-                Console.WriteLine(item.Value);
-            }
-        }
-    }
+  
 }
