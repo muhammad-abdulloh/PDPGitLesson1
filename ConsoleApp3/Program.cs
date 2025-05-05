@@ -1,4 +1,5 @@
 ﻿
+<<<<<<< HEAD
 using ConsoleApp3.Models;
 using ConsoleApp3.Services;
 using ConsoleApp3.Services.IServices;
@@ -140,3 +141,26 @@ class Program
     }
   
 }
+=======
+public class Program
+{
+    
+    static void Main(string[] args)
+    {
+        List<int> lugat = new List<int>() { 1, 3, 5, 0, 4, 9, 6};
+
+        
+
+        foreach (int item in lugat)
+        {
+            Console.WriteLine(item);
+        }
+
+        
+    }
+
+
+}
+
+
+>>>>>>> tes raz raz
